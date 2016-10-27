@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcuboid.a  CMakeFiles/cuboid.dir/cuboid.cpp.o
+/usr/bin/ranlib libcuboid.a

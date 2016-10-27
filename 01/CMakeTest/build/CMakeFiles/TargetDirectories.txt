@@ -1,0 +1,4 @@
+/informatik2/students/home/5bradfie/CVProj/Exercises/CMakeTest/build/CMakeFiles/edit_cache.dir
+/informatik2/students/home/5bradfie/CVProj/Exercises/CMakeTest/build/CMakeFiles/rebuild_cache.dir
+/informatik2/students/home/5bradfie/CVProj/Exercises/CMakeTest/build/CMakeFiles/cuboidExe.dir
+/informatik2/students/home/5bradfie/CVProj/Exercises/CMakeTest/build/CMakeFiles/cuboid.dir

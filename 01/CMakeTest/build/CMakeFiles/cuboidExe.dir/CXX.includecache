@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/informatik2/students/home/5bradfie/CVProj/Exercises/CMakeTest/cuboid.h
+
+/informatik2/students/home/5bradfie/CVProj/Exercises/CMakeTest/main.cpp
+iostream
+-
+cuboid.h
+/informatik2/students/home/5bradfie/CVProj/Exercises/CMakeTest/cuboid.h
+
