@@ -1,14 +1,15 @@
 #include <iostream>
+#include <vector>
 #include "cuboid.h"
 
-using namespace std;
+//using namespace std;
 
 double inputNumber()
 {
     double d;
 
-    cout << "Input number: ";
-    cin >> d;
+    std::cout << "Input number: ";
+    std::cin >> d;
 }
 
 
@@ -21,9 +22,9 @@ int question1(void)
     d1 = inputNumber();
     d2 = inputNumber();
 
-    cout << "Addition: " << (d1 + d2) << endl;
-    cout << "Subtraction: " << (d1 - d2) << endl;
-    cout << "Multiplication: " << (d1 * d2) << endl;
+    std::cout << "Addition: " << (d1 + d2) << std::endl;
+    std::cout << "Subtraction: " << (d1 - d2) << std::endl;
+    std::cout << "Multiplication: " << (d1 * d2) << std::endl;
 
     return 0;
 }
@@ -39,11 +40,11 @@ int question2a(void)
     d2 = inputNumber();
 
     if(d1 > d2)
-        cout << "First number is larger" << endl;
+        std::cout << "First number is larger" << std::endl;
     else if(d2 > d1)
-        cout << "Second number is larger" << endl;
+        std::cout << "Second number is larger" << std::endl;
     else
-        cout << "Numbers are equal" << endl;
+        std::cout << "Numbers are equal" << std::endl;
 
     return 0;
 }
@@ -54,27 +55,55 @@ int question2b(void)
 {
     char selection;
 
-    cout << "Please select an option:" << endl;
-//    cout << "  <c> Start calculation" << endl;
-//    cout << "  <s> Start program" << endl;
-//    cout << "  <t> Terminate program" << endl;
+    std::cout << "Please select an option:" << std::endl;
+//    std::cout << "  <c> Start calculation" << std::endl;
+//    std::cout << "  <s> Start program" << std::endl;
+//    std::cout << "  <t> Terminate program" << std::endl;
 
-    cin >> selection;
+    std::cin >> selection;
 
     switch (selection) {
     case 'c':
-        cout << "Start calculation..." << endl;
+        std::cout << "Start calculation..." << std::endl;
         break;
     case 's':
-        cout << "Start program..." << endl;
+        std::cout << "Start program..." << std::endl;
         break;
     case 't':
-        cout << "Terminate program..." << endl;
+        std::cout << "Terminate program..." << std::endl;
         break;
     default:
-        cout << "Unspecified input";
+        std::cout << "Unspecified input";
         break;
     }
+
+    return 0;
+}
+
+
+/* Question 4 */
+int question4(void)
+{
+    std::vector<int> vec;
+    int input;
+
+    for(int i=0; i<3; i++)
+    {
+        std::cout << "Input integer number " << i+1 << ": " << std::endl;
+        std::cin >> input;
+        vec.push_back(input);
+    }
+
+    std::cout << "Inputs in reverse order: ";
+
+    for(int i=vec.size()-1; i>=0; i--)
+    {
+        std::cout << vec[i] << " ";
+    }
+
+    std::cout << std::endl;
+
+    return 0;
 }
 
 
@@ -84,17 +113,20 @@ int main(int argc, char *argv[])
     //return question2a();
     //return question2b();
 
-    Cuboid c;
-    double d, w, h;
+    // Question 3
+//    Cuboid c;
+//    double d, w, h;
 
-    cout << "Depth: ";
-    cin >> d;
-    cout << "Width: ";
-    cin >> w;
-    cout << "Height: ";
-    cin >> h;
+//    std::cout << "Depth: ";
+//    std::cin >> d;
+//    std::cout << "Width: ";
+//    std::cin >> w;
+//    std::cout << "Height: ";
+//    std::cin >> h;
 
-    c.setDimensions(d, w, h);
+//    c.setDimensions(d, w, h);
 
-    cout << "Cuboid volume: " << c.getVolume() << endl;
+//    std::cout << "Cuboid volume: " << c.getVolume() << std::endl;
+
+    return question4();
 }
